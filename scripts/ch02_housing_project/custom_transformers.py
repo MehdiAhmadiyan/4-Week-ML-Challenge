@@ -5,9 +5,10 @@ especially when loading a saved model using joblib.
 """
 
 from sklearn.base import BaseEstimator, TransformerMixin
-from sklearn.utils.validation import check_array, check_is_fitted
 from sklearn.cluster import KMeans
 from sklearn.metrics.pairwise import rbf_kernel
+from sklearn.utils.validation import check_array, check_is_fitted
+
 
 class StandardScalerClone(BaseEstimator, TransformerMixin):
     def __init__(self, with_mean=True):  # no *args or **kwargs!
