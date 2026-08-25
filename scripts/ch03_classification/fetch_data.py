@@ -1,3 +1,9 @@
+"""
+Data Fetching Script.
+This script downloads the MNIST dataset from openml and saves it locally
+as a .pkl file to speed up future executions and avoid redundant downloads.
+"""
+
 import os
 import joblib
 from sklearn.datasets import fetch_openml

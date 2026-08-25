@@ -1,3 +1,10 @@
+"""
+Binary Classifier Training Script.
+This script loads the locally saved MNIST dataset, prepares binary labels
+for a '5-detector', trains an SGDClassifier and saves the trained model.
+"""
+
+
 import os
 import joblib
 from sklearn.linear_model import SGDClassifier
