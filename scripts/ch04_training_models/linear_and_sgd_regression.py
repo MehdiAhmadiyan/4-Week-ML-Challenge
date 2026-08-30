@@ -15,7 +15,7 @@ def train_linear_models():
     model_dir = "models"
 
     if not os.path.exists(data_path):
-        print("Error: Linear data not found. Please run 01_prepare_data.py first.")
+        print("Error: Linear data not found. Plasee import it first.")
         return
 
     print("Loading linear data...")
