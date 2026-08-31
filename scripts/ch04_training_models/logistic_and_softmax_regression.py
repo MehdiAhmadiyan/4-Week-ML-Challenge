@@ -52,7 +52,7 @@ def train_classification_models():
     softmax_reg = LogisticRegression(C=30, random_state=42)
     softmax_reg.fit(X_train_multi, y_train_multi)
 
-    # Predict a new flower (Length: 5 cm, Width: 2 cm)[cite: 4]
+    # Predict a new flower (Length: 5 cm, Width: 2 cm)
     new_flower = [[5, 2]]
     predicted_class = softmax_reg.predict(new_flower)[0]
     class_name = iris.target_names[predicted_class]
