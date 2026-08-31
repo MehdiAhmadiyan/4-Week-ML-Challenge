@@ -33,7 +33,7 @@ def train_regularized_models():
     print("\nRidge, Lasso, and Elastic Net")
 
     # Ridge (L2 penalty - Smooths the weights)
-    ridge_reg = Ridge(alpha=1.0, solver="cholesky")
+    ridge_reg = Ridge(alpha=1.0, solver="cholesky") # 'sag' solver for large datasets
     ridge_reg.fit(X_train, y_train)
     print(f"Ridge Prediction for X=1.5:       {ridge_reg.predict([[1.5]])[0][0]:.4f}")
 

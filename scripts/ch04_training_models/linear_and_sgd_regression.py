@@ -24,7 +24,7 @@ def train_linear_models():
     y = linear_data["y"]
 
     # Linear Regression (SVD Approach)
-    print("\n--- 1. Linear Regression (SVD Approach) ---")
+    print("\nLinear Regression (SVD Approach)")
     lin_reg = LinearRegression()
     lin_reg.fit(X, y)
 
@@ -33,7 +33,7 @@ def train_linear_models():
     print(f"Coefficient (theta_1): {lin_reg.coef_}")
 
     # Stochastic Gradient Descent (SGDRegressor)
-    print("\n--- 2. Stochastic Gradient Descent (SGDRegressor) ---")
+    print("\nStochastic Gradient Descent (SGDRegressor)")
     sgd_reg = SGDRegressor(max_iter=1000, tol=1e-5, penalty=None,
                            eta0=0.01, n_iter_no_change=100, random_state=42)
     # SGDRegressor Hyperparameters Explanation:
